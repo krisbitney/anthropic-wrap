@@ -46,8 +46,6 @@ impl ModuleTrait for Module {
             data["params"]["tags"] = JSON::to_value(tags).unwrap();
         }
 
-        println!("{:?}", data);
-
         let request = HttpRequest {
             headers: Some(headers),
             url_params: None,
